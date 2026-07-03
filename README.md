@@ -1,3 +1,34 @@
+# security-app-practice
+
+## 概要
+COACHTECH 教材 Tutorial 10-6「Webセキュリティ ハンズオン」で作成した成果物です。
+laravelにおけるセキュリティを意識して問い合わせフォームを作成しました。
+
+
+## 使用技術
+- PHP 8.2
+- Laravel 10.0
+- CSRF 保護（`@csrf`）、XSS 対策（Blade の自動エスケープ）
+
+## 学んだこと
+- CSRF 攻撃の仕組み と　CSRF トークンによる防御
+- XSS 攻撃の仕組みと と　Blade の自動エスケープ（{{ }} と {!! !!} の違い）
+- 
+ 
+
+## 動作確認
+-/localhost/contactにアクセスして動作確認。
+-@csrfを削除した上でフォームを送信（４１９エラーの確認）
+-メッセージにスクリプトを入力して送信（完了画面には文字列として表示）
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
